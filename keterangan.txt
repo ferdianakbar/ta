@@ -1,0 +1,31 @@
+yg perlu bantuan
+#kuisioner
+-perhitungan kuisioner (penilaian kinerja)
+
+#presensi
+-klasifikasi presensi
+80 = x = 100	100%
+70 =  x = 80	90%
+60 = x = 70	80%
+50 = x = 60	70%
+Kurang dari 50	20%
+
+-jam presensi manual yang masuk di db beda dengan jam sekarang
+-belum ada data presensi
+-point pengurangan keterlambatan
+TL1	1 menit s.d = 30 menit 0,5%
+TL2	31 menit s.d = 60 menit	1%
+TL3	61 menit s.d = 90 menit	1,5%
+TL4	91 menit s.d = 120 menit 2%
+TL5	= 121 menit dana atau tidak melakukan perekaman kehadiran 4%
+
+
+#capaian kinerja
+rumus perhitungan capaian kinerja
+(Realisasi Fisik(%))/(Target Fisik(%))+(Realisasi Uang(%))/(Target Uang(%))
+
+#penggabungan
+dari ketiga faktor itu digabungin dengan formula
+60% presensi
+40% capaian kinerja
+40% penilaian kinerja

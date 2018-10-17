@@ -1,0 +1,20 @@
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+
+class m_daftar extends CI_Model {
+
+    function __construct()
+    {
+        parent::__construct();
+    }
+	function simpan_pass(){
+		$password=$this->input->post('password');
+		$nisn= $this->input->post('nisn');
+		$this->db->query("update calon_santri set password='$password' where nisn=$nisn");
+	}
+	
+	function edit_pass($id)
+	{
+		$this->db->where('nisn',$id);
+		$query=$this->db->get('calon_santri');
+		return $query->row();
+	}
